@@ -1,0 +1,8 @@
+<!-- layouting dengan include komponen terpisah -->
+<%- include("./components/header.ejs") %>
+<%- include("./components/navbar.ejs") %>
+    <h1>Nama2 dogs :</h1>
+    <% for (dog of dogs) { %>
+    <li><%= dog %></li>
+    <% } %>
+<%- include("./components/footer.ejs") %>

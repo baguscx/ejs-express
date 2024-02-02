@@ -1,0 +1,16 @@
+<!-- layouting dengan include komponen terpisah -->
+<%- include("./components/header.ejs") %>
+<%- include("./components/navbar.ejs") %>
+    <% if(data.img) { %>
+    <img src="<%= data.img %>" alt="<%= data.title %>" />
+    <% } %>
+    <h1>Tags: <%= data.title %></h1>
+    <p>desc: <%= data.description %></p>
+    <p>folls: <%= data.followers %></p>
+    <hr />
+    <% for (post of data.posts) { %>
+    <div>
+      <p>title : <%= post.title %> - <%= post.author %></p>
+    </div>
+    <% } %>
+<%- include("./components/footer.ejs") %>

@@ -1,0 +1,11 @@
+<!-- layouting dengan include komponen terpisah -->
+<%- include("./components/header.ejs") %>
+<%- include("./components/navbar.ejs") %>
+    <h1>Random Number</h1>
+    <div>Number : <%= randomgen %></div>
+    <% if(randomgen % 2 == 0) {%>
+    <div>Even</div>
+    <%} else {%>
+    <div>Odd</div>
+    <% } %>
+<%- include("./components/footer.ejs") %>
