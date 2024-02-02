@@ -1,0 +1,28 @@
+# Node modules
+/node_modules
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Build files
+/build
+/dist
+
+# Environment files
+.env
+
+# Cache and logs
+/.cache
+/logs
+
+# IDE files
+/.vscode
+*.sublime-project
+*.sublime-workspace
+*.idea
+*.iml
+
+# Temporary files
+.DS_Store
+Thumbs.db
